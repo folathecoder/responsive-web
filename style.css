@@ -16,13 +16,31 @@
     background-color: rgb(255, 0, 0);
     margin-bottom: 40px;
 }
-
+.hide-desktop {
+    display:none;
+}
+.hide-tablet {
+    display:block;
+}
+.hide-mobile {
+    display:block;
+}
 /* Tablet mode with minimum width 768px. */
 @media (max-width:768px) {
 
 .contain {
     width: 45%;
 }
+.hide-desktop {
+    display:block;
+}
+.hide-tablet {
+    display:none;
+}
+.hide-mobile {
+    display:block;
+}
+
 
 }
 /* Mobile mode with minimum width 500px. */
@@ -30,6 +48,15 @@
     
 .contain {
     width: 100%;
+}
+.hide-desktop {
+    display:block;
+}
+.hide-tablet {
+    display:block;
+}
+.hide-mobile {
+    display:none;
 }
     
     }
