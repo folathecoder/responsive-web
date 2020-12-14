@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Asap', sans-serif;
+    background-color: rgb(231, 231, 231);
 }
 .container {
     max-width: 1024px;
@@ -12,27 +13,83 @@ body {
     margin-right: auto;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 180px;
+}
+.header-container {
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 80px;
+    position: fixed;
+    width: 100%;
 }
 header {
-    height: 400px;
-    background-color: purple;
+    width: 1024px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
 }
+
+header a {
+    text-decoration: none;
+}
+.logo {
+    width: 50%;
+    color: white;
+}
+.logo-bold {
+    font-weight: bold;
+}
+.logo p:hover {
+    border-b
+}
+
+nav {
+    text-align: right;
+    width: 50%;
+}
+
+nav a {
+    margin-left: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 5px;
+
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
 .contain {
     /* height: 200px; */
     width: 30%;
-    background-color: rgb(47, 233, 47);
+    background-color: rgb(255, 255, 255);
     /* background-color: rgb(255, 0, 0); */
     margin-bottom: 40px;
+    box-shadow: 0px 0px 4px rgb(209, 209, 209);
+}
+.contain:hover {
+    background-color: rgba(0, 0, 0, 0.061);
+    transition: 0.5s;
 }
 
 .card-text {
     text-align: left;
-    padding: 20px 20px;
-    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    color: rgb(0, 0, 0);
     line-height: 1.5rem;
+    box-shadow: 0px 0px 4px rgb(209, 209, 209);
 }
 .card-text p::first-line {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
