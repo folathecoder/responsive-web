@@ -1,21 +1,43 @@
 /* General or Desktop mode. */
 
+body {
+    font-family: 'Asap', sans-serif;
+}
 .container {
     max-width: 1024px;
     min-height: 500px;
-    background-color: rgb(47, 233, 47);
+    /* background-color: rgb(47, 233, 47); */
     display: flex;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+header {
+    height: 400px;
+    background-color: purple;
+}
 .contain {
-    height: 200px;
+    /* height: 200px; */
     width: 30%;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(47, 233, 47);
+    /* background-color: rgb(255, 0, 0); */
     margin-bottom: 40px;
 }
+
+.card-text {
+    text-align: left;
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5rem;
+}
+.card-text p::first-line {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+/* hide section on desktop */
 .hide-desktop {
     display:none;
 }
@@ -25,6 +47,15 @@
 .hide-mobile {
     display:block;
 }
+
+/* image responsiveness */
+
+.contain img {
+    width: 100%;
+    height: auto;
+}
+
+
 /* Tablet mode with minimum width 768px. */
 @media (max-width:768px) {
 
