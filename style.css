@@ -16,15 +16,15 @@ body {
     padding-top: 180px;
 }
 .header-container {
-    height: 100px;
+    min-height: 100px;
     background-color: rgb(0, 0, 0);
     margin-bottom: 80px;
     position: fixed;
     width: 100%;
 }
 header {
-    width: 1024px;
-    height: 100px;
+    max-width: 1024px;
+    min-height: 100px;
     background-color: rgb(0, 0, 0);
     margin-left: auto;
     margin-right: auto;
@@ -36,19 +36,17 @@ header a {
     text-decoration: none;
 }
 .logo {
-    width: 50%;
-    color: white;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .logo-bold {
     font-weight: bold;
 }
-.logo p:hover {
-    border-b
-}
 
 nav {
     text-align: right;
-    width: 50%;
+    width: 100%;
 }
 
 nav a {
@@ -92,7 +90,9 @@ nav a:hover {
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
-
+.burger-dropdown a {
+    display: none;
+}
 
 /* hide section on desktop */
 .hide-desktop {
@@ -128,11 +128,66 @@ nav a:hover {
 .hide-mobile {
     display:block;
 }
-
+.header-container {
+    max-width: 100%;
+}
+.header-container {
+    display: relative;
+}
+/* header {
+    display: block;
+    justify-content: space-between;
+} */
+.logo {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: left;
+    margin-left: 10px;
+}
+/* nav {
+    width: 100%;
+}
+nav a {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    border-radius: 0px;
+} */
+nav {
+    display: none;
+}
+.burger-menu {
+    display: block;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    height: 20px;
+}
+.burger-menu img {
+    background-color: white;
+    margin-right: 10px;
+    display: absolute;
+}
+.burger-menu {
+    display: absolute;
+}
+.burger-dropdown {
+    display: relative;
+    padding-top: 20px;
+}
+.burger-dropdown a {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    padding: 15px;
+    text-align: left;
+}
 
 }
 /* Mobile mode with minimum width 500px. */
-@media (max-width:500px) {
+@media (max-width:400px) {
     
 .contain {
     width: 100%;
